@@ -35,7 +35,7 @@ function AddItemForm(props: AddItemFormPropsType) {
                        onKeyPress={onKeyPressHandler}
                        helperText={ error ? 'Title is required' : ""}
                        label={"Title"}
-                       error={!!error}
+                       error={error}
             />
             <IconButton color="primary" onClick={addTask}><AddBox/></IconButton>
             {/*{error && <div className="error-message">{error}</div>}*/}
